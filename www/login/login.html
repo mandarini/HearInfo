@@ -1,0 +1,24 @@
+<html>
+    <h1 class="title">Hear?Info</h1>
+    </br>
+     <p><img src="../img/logo.PNG" height="100px"></img></p>
+      <label class="input">
+        <span class="input">Email</span>
+        <input type="email" placeholder="name@example.com" ng-model="user.email">
+      </label>
+      <label class="input">
+        <span class="input">Password</span>
+        <input type="password" placeholder="YourPassword" ng-model="user.password">
+      </label>
+
+      <button class="button" ng-click="login()">Log in!</button>
+      <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
+      </br>
+      <button class="button" ui-sref="reset-password">
+        Forgot password
+      </button>
+      <button class="button" ui-sref="signup">
+       Register
+      </button>
+    </div>
+</html>

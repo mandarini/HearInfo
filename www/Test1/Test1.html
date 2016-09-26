@@ -1,0 +1,65 @@
+<style type="text/css">
+</style>
+<link href="../myapp.css" rel="stylesheet" type="text/css">
+<ion-view title="Self Report" hide-back-button="true">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+    <h4>Self-Test for Hearing Loss</h4>
+        <p><small>Please answer with YES or NO accordingly.</small></p>
+     <form role="form" id="test" ng-submit="answ(a, b, c, d, e, f, g)">
+            <label for="a">Do you have a problem hearing over the telephone?</label>
+     		</br>
+            <select id="a" name="a" class="form-control" ng-model="a">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+            <label for="b">Do you have trouble following the conversation with two or more people talking at the same time?</label>
+            </br>
+             <select id="b" name="b" class="form-control" ng-model="b">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+            <label for="c">Do people complain that you turn the TV volume up too high?</label>
+            </br>
+             <select id="c" name="c" class="form-control" ng-model="c">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+            <label for="d">Do you have trouble hearing in a noisy background?</label>
+            </br>
+             <select id="d" name="d" class="form-control" ng-model="d">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+                <label for="e">Do you have dizziness, pain, or ringing in your ears?</label>
+            </br>
+             <select id="e" name="e" class="form-control" ng-model="e">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+                <label for="f">Do you find yourself asking people to repeat themselves?</label>
+            </br>
+             <select id="f" name="f" class="form-control" ng-model="f">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+                <label for="g">Do you misunderstand what others are saying and respond inappropriately?</label>
+            </br>
+             <select id="g" name="g" class="form-control" ng-model="g">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            </br></br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    
+  </ion-content>
+</ion-view>

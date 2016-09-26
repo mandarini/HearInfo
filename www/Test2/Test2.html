@@ -1,0 +1,86 @@
+<style type="text/css">
+</style>
+<link href="../myapp.css" rel="stylesheet" type="text/css">
+<ion-view title="Tinnitus" hide-back-button="true">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+    <h4>Tinnitus Questionnaire</h4>
+    <p><small>Please indicate 1 that you strongly disagree and up to 5 that you strongly agree.</small></p>
+     <form role="form" id="test" ng-submit="answ2(a, b, c, d, e, f, g)">
+            <label for="a">I am unable to follow conversation during meetings because of tinnitus</label>
+     		</br>
+            <select id="a" name="a" class="form-control" ng-model="a">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="b">Tinnitus creates family problems</label>
+            </br>
+             <select id="b" name="b" class="form-control" ng-model="b">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="c">I feel uneasy in social situations because of tinnitus</label>
+            </br>
+             <select id="c" name="c" class="form-control" ng-model="c">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="d">Tinnitus interferes with my ability to tell where sounds are coming from.</label>
+            </br>
+             <select id="d" name="d" class="form-control" ng-model="d">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="e">I cannot concentrate because of tinnitus</label>
+            </br>
+             <select id="e" name="e" class="form-control" ng-model="e">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="f">Tinnitus has caused a reduction in my speech understanding ability</label>
+            </br>
+             <select id="f" name="f" class="form-control" ng-model="f">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+            <label for="d">I feel frustrated frequently because of tinnitus.</label>
+            </br>
+             <select id="g" name="g" class="form-control" ng-model="g">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            </br></br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    
+  </ion-content>
+</ion-view>

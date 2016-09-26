@@ -1,0 +1,32 @@
+<style type="text/css">
+</style>
+<link href="../myapp.css" rel="stylesheet" type="text/css">
+<ion-view title="Conditions" hide-back-button="true">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+    <p>Choose a condition from the list</p>
+         <form role="form" id="condition" ng-submit="prof(condition, age, qa, qb)">
+            <select id="condition" name="condition" class="form-control" ng-model="condition">
+                <option>Conductive Hearing Loss</option>
+                <option>Sensorineural Hearing Loss</option>
+                <option>Mixed Hearing Loss</option>
+            </select>
+      	<label class="item item-input item-stacked-label">
+    	    <span class="input-label">Age</span>
+        	<input id="age" type="text" placeholder="Your age here" ng-model="age">
+      	</label>
+      	<!-- <select id="a" name="a" class="form-control" ng-model="qa">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+             <select id="b" name="b" class="form-control" ng-model="qb">
+                <option>Yes</option>
+                <option>No</option>
+            </select> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+  </ion-content>
+</ion-view>
